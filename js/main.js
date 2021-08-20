@@ -1,23 +1,40 @@
 $(document).ready(function () {
 
-   $('.parent_catalog > a').click(function (e) {
+  $('.parent_catalog > a').click(function (e) {
     e.preventDefault();
-    $('.bglayer').toggle();
-    $(this).closest('.parent_catalog').find('.subnav').slideToggle();
+    $('.bglayer').show();
+    $(this).closest('.parent_catalog').find('.subnav').addClass('active');
   });
 
-   $(document).mouseup(function(e) 
-    {
-        var container = $(".subnav");
-        var ext = $(".parent_catalog > a");
-        var ext2 = $(".subnav");
+  $('.parent_menu > a').click(function (e) {
+    e.preventDefault();
+    $('.bglayer').show();
+    $('.navpanel').removeClass('hidden').addClass('active');
+  });
 
-        // if the target of the click isn't the container nor a descendant of the container
-        if (!ext.is(e.target) &&  !container.is(e.target) && ext.has(e.target).length === 0 && ext2.has(e.target).length === 0) 
-        {
-            container.hide();
-            $('.bglayer').toggle();
+  $('.close-js').click(function (e) {
+    e.preventDefault();
+    $('.bglayer').hide();
+    $('.navpanel').removeClass('active').addClass('hidden');
+  });
+
+  $(document).mouseup(function(e) 
+    {
+        var container = $(".bgtoggle-js");
+        var ext1 = $(".bgtoggler-js");
+        var ext2 = $(".bgtoggle-js");
+
+        if ($(".bgtoggle-js").is(":visible")) {
+           if (!ext1.is(e.target) &&  !container.is(e.target) && ext1.has(e.target).length === 0 && ext2.has(e.target).length === 0) 
+            {
+                container.removeClass('active').addClass('hidden');
+                $('.bglayer').hide();
+            }
         }
-    });
+
+  });
+
+
+  
 
 });

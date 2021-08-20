@@ -344,19 +344,21 @@ path, rect {
     background: #777;
     opacity: 0.4;
     position: fixed;
-    z-index: 3;
+    z-index: 1;
     top: 0;
     cursor: pointer;
     display: none;
 }
-.bglayer.active {
-  display: block;
-}
+
 
 .subnav__content {
  
  
 
+}
+
+.subnav.active {
+  display: block;
 }
 
 .subnav__menu {
@@ -507,3 +509,62 @@ path, rect {
   border-left: 1px solid #EAEAEA;
       padding: 31px 91px 36px 104px;
 }
+
+@keyframes menuOpen {
+  from {
+    left: -453px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes menuClose {
+  from {
+    left: 0;
+  }
+  to {
+    left: -453px;
+  }
+}
+.hidden {
+  display: none !important;
+}
+
+.navpanel {
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    height: initial;
+    background: #fff;
+    z-index: 100;
+    max-width: 100%;
+    width: 453px;
+    left: -453px;
+    transition: none !important;
+    animation-name: menuClose;
+    animation-duration: 0.5s;
+    display: block;
+}
+
+.navpanel.active {
+  left: 0;
+  animation-name: menuOpen;
+   animation-duration: 0.5s;
+}
+
+
+.navpanel__content {
+  padding: 114px 30px 30px 96px;
+}
+.navpanel__close {}
+.navpanel__menu {}
+.navpanel__info {}
+.navpanel__info1 {}
+.navpanel__info2 {}
+.navpanel__info3 {}
+.navpanel__button {}
+.btn_border {}
+.navpanel__socials {}
+
+    
