@@ -228,7 +228,7 @@ text-transform: uppercase;
   color: #FFFFFF;
 }
 
-.header__nav { 
+.header__navcontainer { 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -267,18 +267,15 @@ text-transform: uppercase;
 }
 
 
-.parent {
+
+.nav > ul > li.parent_catalog > a {
+  padding-right: 65px;
   position: relative;
 }
 
 
-.nav > ul > li.parent_hover a {
-  padding-right: 65px;
-}
 
-
-
-.nav > ul > li.parent_hover a:after {
+.nav > ul > li.parent_catalog > a:after {
   content: url(/images/polygon1.svg);
   position: absolute;
   right: 20px;
@@ -286,21 +283,27 @@ text-transform: uppercase;
 }
 
 
-.nav > ul > li.parent_hover a:hover:after {
+.nav > ul > li.parent_catalog > a:hover:after {
  content: url(/images/polygon2.svg);
   position: absolute;
   right: 20px;
   top: calc(50% - 5px);
 }
 
-.nav > ul > li.parent_click a:hover {
+.nav > ul > li.parent_menu > a:hover {
   background: none;
 }
 
-.nav > ul > li.parent_click a:hover svg rect {
+.nav > ul > li.parent_menu > a:hover > svg rect {
   fill: #000;
 }
-
+.nav > ul > li.parent_menu > a:hover > svg rect:nth-child(2) {
+  width: 24px;
+  max-width: 24px;
+}
+.nav > ul > li.parent_menu > a > svg {
+  overflow: visible;
+}
 
 .shopmenu {
   margin: 0 -16px;
@@ -333,4 +336,174 @@ path, rect {
   position: absolute;
   right: 12px;
   bottom: 4px;
+}
+
+.bglayer {
+    width: 100%;
+    height: 100%;
+    background: #777;
+    opacity: 0.4;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+.bglayer.active {
+  display: block;
+}
+
+.subnav__content {
+ 
+ 
+
+}
+
+.subnav__menu {
+  
+}
+.subnav__menu > ul {
+    width: 370px;
+ padding: 31px 31px 36px 69px;
+ height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.subnav__menu > ul > li {
+  width: 100%;
+}
+
+
+
+.subnav {
+  min-height: 505px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: calc(100%);
+  z-index: 3;
+   background: #F9F9F9;
+   display: none;
+}
+
+.header__nav {
+  position: relative;
+}
+
+.subnav__content {
+  display: flex;
+}
+.subnav__menu > ul > li > a {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.subnav__menu > ul > li > a:hover {
+  color: #5C5C5C;
+}
+
+.subnav__img {
+  width: 440px;
+  height: 440px;
+  margin-right: 93px;
+}
+
+.subnav__block {
+  
+
+
+}
+.subnav__wrapper {
+    background: #EFF7F6;
+  padding-right: 38px;
+  display: flex;
+  align-items: center;
+}
+.productblock__caption {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #A2A2A2;
+  margin-bottom: 13px;
+}
+.productblock__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+  margin-bottom: 27px;
+  font-family: 'Playfair Display';
+
+}
+.productblock__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  /* or 29px */
+
+  font-family: 'Futura PT';
+  color: #402D3A;
+  margin-bottom: 27px;
+}
+.productblock__price {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 160%;
+  margin-bottom: 29px;
+}
+.productblock__button {
+  margin-bottom: 29px;
+}
+.btn_main {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+       background: #000;
+    color: #fff;
+    padding: 0 36px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    height: 49px;
+    line-height: 49px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    position: relative;
+}
+.btn_main_arrow {
+  padding-right: 60px;
+}
+
+.btn_main_arrow:after {
+  content: url(/images/polygon2.svg);
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 5px);
+}
+
+.btn_main:hover {
+  color: #fff;
+  background: #353535;
+}
+
+
+.subnav__block {
+  padding-left: 104px;
+  border-left: 1px solid #EAEAEA;
+      padding: 31px 91px 36px 104px;
 }

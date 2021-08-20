@@ -23,6 +23,7 @@
   </head>  
   <body>
       <a id="top"></a>
+      <div class="bglayer"></div>
       <header id="header" class="header clearfix">
         <div class="container">
           <div class="header__main">
@@ -72,21 +73,55 @@
               </div>
             </div>
           </div>
+        </div>
           <div class="header__nav">
+            <div class="container">
+              <div class="header__navcontainer">
             <nav class="nav">
               <ul>
-                <li class="parent parent_click">
+                <li class="parent parent_menu">
                   <a href="#">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect y="16" width="20" height="2" rx="1" fill="#6D696C"/>
                       <rect y="8" width="17" height="2" rx="1" fill="#6D696C"/>
                       <rect width="20" height="2" rx="1" fill="#6D696C"/>
                     </svg>
-  
                   </a>
                 </li>
-                <li class="parent parent_hover">
+                <li class="parent parent_catalog">
                   <a href="#">Каталог</a>
+                  <div class="subnav">
+                    <div class="container">
+                    <div class="subnav__content">
+                      <div class="subnav__menu">
+                        <ul>
+                          <li><a href="">Все букеты</a></li>
+                          <li><a href="">Цветы</a></li>
+                          <li><a href="">Букеты</a></li>
+                          <li><a href="">Композиции</a></li>
+                          <li><a href="">Букеты из роз</a></li>
+                          <li><a href="">Монобукеты</a></li>
+                        </ul>
+                      </div>
+                      <div class="subnav__block">
+                        <div class="subnav__wrapper">
+                          <div class="subnav__image">
+                            <div class="subnav__img" style="background-image: url(/images/image1.jpg)"></div>
+                          </div>
+                          <div class="subnav__card">
+                            <div class="productblock">
+                              <div class="productblock__caption">Специальное предложение</div>
+                              <div class="productblock__title">Осенний букет</div>
+                              <div class="productblock__text"><b>Осенние флористические композиции</b> составляют из растений цветовой гаммы, наиболее ярко отражающей особенности этого сезона.</div>
+                              <div class="productblock__price">1 860 руб</div>
+                              <div class="productblock__button"><a href="" class="btn_main btn_main_arrow">Купить осенний букет</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
                   <a href="#">Доставка и Оплата</a>
@@ -95,7 +130,9 @@
                   <a href="#">Контакты</a>
                 </li>
               </ul>
+
             </nav>
+
             <div class="shopmenu">
               <a href="#" class="shopmenu__item">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,6 +156,8 @@
                 </svg>
                 <span class="shopmenu__count">12</span>
               </a>
+            </div>
+            </div>
             </div>
           </div>
         </div>
@@ -152,7 +191,7 @@
               <div class="mainslider__slide" style=" background-image: url(/images/mainbg.jpg);">
                 <div class="mainblock">
                   <div class="container">
-                    <div class="mainblock__wrapper">
+                    <div class="mainblock__wrapper"
                     <div class="mainblock__content">
                       <div class="mainblock__title">Стальные панельные радиаторы PRADO</div>
                       <div class="mainblock__subtitle">Теплое решение вашего дома</div>
