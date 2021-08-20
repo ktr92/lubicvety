@@ -206,7 +206,7 @@ a.socials__item:hover svg path {
   color: #402D3A;
  }
 .callback {}
-.btn_boder {
+.btn_border {
   font-style: normal;
   font-weight: 450;
   font-size: 16px;
@@ -223,7 +223,7 @@ box-sizing: border-box;
 border-radius: 3px;
 text-transform: uppercase;
 }
-.btn_boder:hover {
+.btn_border:hover {
   background: #402D3A;
   color: #FFFFFF;
 }
@@ -543,7 +543,6 @@ path, rect {
     left: -453px;
     transition: none !important;
     animation-name: menuClose;
-    animation-duration: 0.5s;
     display: block;
 }
 
@@ -557,13 +556,72 @@ path, rect {
 .navpanel__content {
   padding: 114px 30px 30px 96px;
 }
-.navpanel__close {}
-.navpanel__menu {}
-.navpanel__info {}
-.navpanel__info1 {}
-.navpanel__info2 {}
+.navpanel__close {
+  cursor: pointer;
+}
+.navpanel__menu > ul  {
+  margin: 60px 0;
+}
+.navpanel__menu > ul > li {
+  margin-bottom: 47px;
+}
+.navpanel__menu > ul > li {
+  margin-bottom: 27px;
+}
+
+.navpanel__menu > ul > li > a {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: 'Futura PT';
+  text-transform: uppercase;
+
+  color: #402D3A;
+}
+.navpanel__info {
+}
+.navpanel__info1 {
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+margin-bottom: 36px;
+color: #000000;
+
+}
+.navpanel__info1 span {
+  display: block;
+  color: #7C7179;
+}
+.navpanel__info2 .phone a {
+   font-family: 'Futura PT';
+}
+.navpanel__info2 {
+  margin-bottom: 28px;
+}
+.email a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  text-decoration: underline;
+
+  color: #402D3A;
+}
+.navpanel__info3 {
+  margin-bottom: 59px;
+}
 .navpanel__info3 {}
-.navpanel__button {}
+.navpanel__button {
+    margin-bottom: 100px;
+
+}
+
+.navpanel__button .btn_border {
+  max-width: 226px;
+}
 .btn_border {}
 .navpanel__socials {}
 
