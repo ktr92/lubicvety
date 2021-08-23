@@ -35,6 +35,42 @@ $(document).ready(function () {
   });
 
 
-  
+
+  $(".productcard__image").each(function() {
+    $(this).addClass('isInitialized').brazzersCarousel();
+  });
+
+    var $frame = $('.frame');
+    var $wrap  = $frame.parent();
+
+    // Call Sly on frame
+    $frame.sly({
+      horizontal: 1,
+      itemNav: 'basic',
+      smart: 1,
+      activateOn: 'click',
+      mouseDragging: 1,
+      touchDragging: 1,
+      releaseSwing: 1,
+      startAt: 0,
+      scrollBar: $wrap.find('.scrollbar'),
+      scrollBy: 1,
+      speed: 1000,
+      elasticBounds: 1,
+      dragHandle: 1,
+      dynamicHandle: 1,
+      clickBar: 1,
+
+      // Cycling
+      cycleBy: 'items',
+      cycleInterval: 0,
+      pauseOnHover: 1,
+
+      // Buttons
+      prev: $wrap.find('.productslider__arrow_left'),
+      next: $wrap.find('.productslider__arrow_right')
+    });
+
 
 });
+
