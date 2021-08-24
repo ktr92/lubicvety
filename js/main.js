@@ -86,9 +86,28 @@ window.onload = function() {
 
 if ($("#sliderprice1").length) {
 
+   $('input#maxCost1').on('focusin', function () {
+    $(this).val("");
+  });
+
+  $('input#minCost1').on('focusin', function () {
+    $(this).val("");
+  });
+  $('input#maxCost2').on('focusin', function () {
+    $(this).val("");
+  });
+
+  $('input#minCost2').on('focusin', function () {
+    $(this).val("");
+  });
+
+
+
   $("#maxCost1").val($('#limitMax1').val());
   $("#minCost1").val($('#limitMin1').val());
-  
+
+   $("#maxCost1").prop("placeholder", $("#limitMax1").val());
+   $("#minCost1").prop("placeholder", $("#limitMin1").val());
 
  /* function prettify(num) {
     var n = num.toString();

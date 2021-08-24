@@ -1290,110 +1290,76 @@ color: #402D3A;
 .filter__form {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(211,211,211,0.5);
 }
 
-.filter__item .filter__header span {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-
-  color: #526272;
-  opacity: 0.5;
-}
 
  
-.filter__item_open .filter__header span {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  opacity: 1;
-  color: #526272;
-}
 
 .filter__item svg {
   transform: rotate(-180deg);
 }
 
-.filter__item svg path {
-  opacity: 1;
-}
 
 .filter__item_open svg {
   transform: none;
 }
 
-.filter__item_open svg path {
-  opacity: 0.5;
-}
 
 .filter__item_close .filter__form {
   display: none;
 }
 
 
- .formCost input{
-  width: 98px;
-  height: 48px;
-  line-height: 48pc;
-  background: #FFFFFF;
-  border: 1px solid #E9E9E9;
-  box-sizing: border-box;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  align-items: center;
-  text-align: center;
-  color: rgba(82,98,114,0.5);
-  border-radius: 0;
- }
-
  
 .formCost input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  align-items: center;
-  text-align: center;
-  color: rgba(82,98,114,0.5);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+
+color: #978D94;
 }
 
 .formCost input::-moz-placeholder {
   /* Firefox 19+ */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  align-items: center;
-  text-align: center;
-  color: rgba(82,98,114,0.5);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+
+color: #978D94;
 }
 
 .formCost input:-ms-input-placeholder {
   /* IE 10+ */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  align-items: center;
-  text-align: center;
-  color: rgba(82,98,114,0.5);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+
+color: #978D94;
 }
 
 .formCost input:-moz-placeholder {
   /* Firefox 18- */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  align-items: center;
-  text-align: center;
-  color: rgba(82,98,114,0.5);
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+
+color: #978D94;
 }
 
 .sliderCont {
@@ -1428,16 +1394,12 @@ color: #402D3A;
 
 
 span.dcheckbox__text {
-    padding: 0 0 0 26px;
-    position: relative;
-    display: inline-block;
-    vertical-align: baseline;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 18px;
-  color: rgba(82,98,114,1);
-  opacity: 0.5;
+   font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #402D3A;
+    transition: all 0.5s;
  }
  
 
@@ -1450,45 +1412,117 @@ span.dcheckbox__text {
     content: "";
     display: block;
     position: absolute;
-  width: 18px;
-  height: 18px;
-  opacity: 0.5;
-  border: 2px solid rgba(82,98,114, 1);
-  box-sizing: border-box;
-  border-radius: 4px;
-    left: 0;
+
+     left: 0;
     top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #B0D0D0;
+    box-sizing: border-box;
+
 }
 
 
 .dcheckbox label {
-  padding-left: 0;
-  cursor: pointer;
-  margin-bottom: 5px;
-  transition: all 0.5s;
+padding-left: 0;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: all 0.5s;
+    position: relative;
+    padding-left: 67px;
+    display: block;
+    width: 100%;
 }
 
 
 .dcheckbox label:hover .dcheckbox__text:before {
-  background-image: url(/images/check1.png);
+    background: #B0D0D0;
   background-repeat: no-repeat;
+  background-position: center;
   background-position: center;
 }
 
 .dcheckbox input[type=checkbox]:checked + .dcheckbox__text:before {
-   background-image: url(/images/check2.png);
+   background: #B0D0D0;
+   background-image: url(/images/radio.svg);
   background-repeat: no-repeat;
   background-position: center;
-  border-color: #25B757;
-  opacity: 1;
 }
 .dcheckbox input[type=checkbox]:checked + .dcheckbox__text {
 
   opacity: 1;
 }
 
-.filter__item {
+
+.radiotype input[type=radio]  {
+   display: none;
+ }
+ 
+ .radiotype span.radiotype__text:before {
+    content: "";
+      
+        display: block;
+        position: absolute;
+      border-radius: 50%;
+        left: 0;
+        top: 0;
+
+        width: 20px;
+    height: 20px;
+
+  
+    border: 1px solid #B0D0D0;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+
+
+
+.radiotype label:hover .radiotype__text:before {
+  background-image: url(/images/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+    background: #B0D0D0;
+}
+.radiotype input[type=radio]:checked + .radiotype__text:before {
+  background: #B0D0D0;
+   background-image: url(/images/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+
+ .radiotype span.radiotype__text {
+ font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #402D3A;
+  transition: all 0.5s;
+  
+ }
+
+.radiotype label {
+  padding-left: 0;
+  cursor: pointer;
   margin-bottom: 16px;
+  transition: all 0.5s;
+  position: relative;
+  padding-left: 67px;
+  display: block;
+  width: 100%;
+}
+ 
+ 
+
+
+.filter__item {
+  margin-bottom: 20px;
+  background: #EFF6F6;
+  padding: 30px 46px 26px 46px;
 }
 
 .catalog__aside {
@@ -1540,6 +1574,7 @@ span.dcheckbox__text {
     color: #978D94;
  border-bottom: 2px solid  #C4C4C4;
  width: 143px;
+ background: none;
 }
 
 .formCost input.notchanged {
@@ -1547,7 +1582,7 @@ span.dcheckbox__text {
  border-bottom: 2px solid  #C4C4C4;
 }
 
-.formCost input.notchanged:focus {
+.formCost input:focus {
      color: #272727;
       border-bottom: 2px solid #3D3D3D;
 
@@ -1569,7 +1604,7 @@ line-height: 21px;
 color: #978D94;
     position: absolute;
     left: 20px;
-    bottom: 15px;
+    bottom: 13px;
 
 }
 
@@ -1589,7 +1624,7 @@ line-height: 21px;
 color: #978D94;
     position: absolute;
     left: 20px;
-    bottom: 15px;
+    bottom: 13px;
 
 }
 
@@ -1603,9 +1638,19 @@ line-height: 26px;
 /* identical to box height */
 color: #000000;
 margin-bottom: 13px;
+ font-weight: bold;
 }
 .filter__price {
   max-width: 100%;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
+
+.filter__form {
+  max-height: 305px;
+  overflow-y: auto;
+}
+
+.filter__header-js {
+  cursor: pointer;
+}
