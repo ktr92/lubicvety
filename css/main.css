@@ -2175,7 +2175,7 @@ h3 {
 }
 .footer__cols .footer__col {
   width: 100%;
-  max-width: 320px;
+  max-width: 720px;
   margin: 0 auto 30px auto;
 }
 .footer__contacts .dflex {
@@ -2191,6 +2191,22 @@ h3 {
 }
 #footer {
     margin-top: 30px;
+}
+.footerinfo.dflex {
+  display: block;
+}
+.footerinfo.dflex > * {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.promo__wrapper:before {
+  height: 100%;
+}
+.scrollbar {
+  width: calc(100% - 105px);
+}
+.categories__list .row .col-md-6:last-child .catcard_large .catcard__image img {
+    right: -306px;
 }
 }
 
