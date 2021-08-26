@@ -18,6 +18,14 @@ $(document).ready(function () {
     $('.navpanel').removeClass('active').addClass('hidden');
   });
 
+  
+
+  $('.showtext').click(function (e) {
+    e.preventDefault();
+    $(this).siblings('.text').removeClass('text_hidden');
+    $(this).hide();
+  });
+
   $(document).mouseup(function(e) 
     {
         var container = $(".bgtoggle-js");
