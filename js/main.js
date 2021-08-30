@@ -12,6 +12,18 @@ $(document).ready(function () {
     $('.navpanel').removeClass('hidden').addClass('active');
   });
 
+  $('.leftmenu__header').click(function (e) {
+    e.preventDefault();
+    $(this).next('.leftmenu__list').slideToggle();
+  });
+
+  $('.filterbutton').click(function (e) {
+    e.preventDefault();
+    $('.filter').slideToggle();
+  });
+
+  
+
   $('.close-js').click(function (e) {
     e.preventDefault();
     $('.bglayer').hide();
