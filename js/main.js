@@ -90,7 +90,15 @@ $(document).ready(function () {
 
   });
 
-
+  $('.accordeon-js .accordeon__title').click(function (event) {
+        $('.accordeon__content').not($(this).next()).hide().removeClass('active');
+        $('.accordeon__title').not($(this)).removeClass('active');
+        $(this).toggleClass('active');
+        $(this).next('.accordeon__content').slideToggle();
+        $(this).find('.accordeon__status_close').toggleClass('active');
+        $(this).find('.accordeon__status_open').toggleClass('active');
+        
+    });
 
   $(".productcard__image").each(function() {
     $(this).addClass('isInitialized').brazzersCarousel();
