@@ -1,5 +1,41 @@
 $(document).ready(function () {
 
+  $('.productimg__images').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: true,
+    fade: true,
+    asNavFor: '.productimg__previews',
+    responsive: [
+        
+        {
+          breakpoint: 1023,
+          settings: {
+          
+          dots: true
+          }
+        },
+        
+        ]
+  });
+  
+  $('.productimg__previews').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    fade: false,
+    dots: false,
+    infinite: true,
+    vertical: true,
+    verticalSwiping: true,
+    centerMode: false,
+    asNavFor: '.productimg__images',
+    focusOnSelect: true
+
+  });
+
+
+
   $('.parent_catalog > a').click(function (e) {
     e.preventDefault();
     $('.bglayer').show();
