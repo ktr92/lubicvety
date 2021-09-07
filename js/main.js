@@ -6,18 +6,9 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     fade: true,
+    dots: false,
     asNavFor: '.productimg__previews',
-    responsive: [
-        
-        {
-          breakpoint: 1023,
-          settings: {
-          
-          dots: true
-          }
-        },
-        
-        ]
+   
   });
   
   $('.productimg__previews').slick({
@@ -30,7 +21,20 @@ $(document).ready(function () {
     verticalSwiping: true,
     centerMode: false,
     asNavFor: '.productimg__images',
-    focusOnSelect: true
+    focusOnSelect: true,
+     responsive: [
+        
+        {
+          breakpoint: 767,
+          settings: {
+          slidesToShow: 3,
+    slidesToScroll: 1,
+          vertical: false,
+           verticalSwiping: false,
+          }
+        },
+        
+        ]
 
   });
 

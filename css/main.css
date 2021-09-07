@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1770px;
+  max-width: 1800px;
   width: 100%;
   padding: 0 15px;
 }
@@ -2520,7 +2520,7 @@ margin: 0 -10px;
     animation: 0;
     top: 0;
     right: 0;
-    width: calc(100% - 165px);
+    width: calc(100% - 150px);
     height: 100%;
   position: relative;
   margin-left: 150px;
@@ -2586,7 +2586,6 @@ background: #fff;
   justify-content: center;
   height: 100%;
   background: #fff;
-  border: 1px solid #E9E9E9;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -2639,7 +2638,7 @@ background: #fff;
 }
 
 .productpage__right {
-  padding-left: 72px;
+  padding-left: 60px;
    width: 50%;
 }
 .productimg__prev {
@@ -2959,10 +2958,151 @@ color: #7E7E7E;
   margin-left: 25px;
 }
 
+.productpage__accessories {
+  margin: 80px 0 80px -12px;
+  width: calc(100% + 12px);
+}
+.moreadd__title {
+  font-style: normal;
+font-weight: 450;
+font-size: 32px;
+line-height: 160%;
+/* or 51px */
+margin-bottom: 10px;
+
+color: #000000;
+
+}
+.moreadd__text {
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 160%;
+/* or 26px */
+margin-bottom: 28px;
+
+color: #402D3A;
+}
+.moreadd__content {
+  margin: 18px 0;
+}
+.productsmore {
+  display: flex;
+  margin: 0 -6px;
+  flex-wrap: wrap;
+}
+.productsmore__item {
+  padding: 0 6px;
+  width: 33.3333%;
+  margin-bottom: 12px;
+}
+.productsmore__content {
+ 
+border-radius: 3px;
+overflow: hidden;
+
+}
+.productsmore__image {}
+.productsmore__main {
+  padding: 17px 16px;
+   background: #F4F9F9;
+}
+.productsmore__name {
+  font-style: normal;
+font-weight: 450;
+font-size: 16px;
+line-height: 21px;
+text-transform: uppercase;
+margin-bottom: 9px;
+color: #402D3A;
+font-family: 'Futura PT';
+}
+.productsmore__button {}
+.btn_check {
+  background: #000000;
+border-radius: 3px;
+display: block;
+height: 40px;
+line-height: 40px;
+white-space: nowrap;
+padding: 0 22px;
+transition: all 0.3s ease;
+}
+.btn_check:hover {
+  opacity: 0.8;
+}
+.btn_check span {
+  font-style: normal;
+font-weight: 450;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+line-height: 40px;
+text-align: center;
+
+color: #FFFFFF;
+padding-left: 37px;
+position: relative;
+display: inline-block;
+}
+
+.btn_check span:after {
+  content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+       left: 0px;
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #6C6C6C;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.btn_check_added span:after {
+  background: #6FC4C0;
+    background-image: url(/images/radio.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.productsmore__image {
+  position: relative;
+  overflow: hidden;
+  padding-top: 97%;
+  border-radius: 3px;
+}
+.productsmore__image img {
+    position: absolute;
+    left: -99999px;
+    right: -99999px;
+    top: -99999px;
+    bottom: -99999px;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: initial;
+    height: initial;
+}
+
+@media (max-width: 1670px) {
+  .btn_check {
+    padding: 0 10px;
+  }
+  .btn_check span {
+    padding-left: 27px;
+  }
+  .btn_check span {
+    font-size: 14px;
+  }
+
+}
 
 @media (max-width: 1550px) {
  
-  
+
   .promo__img {
     margin-left: 0;
     margin-right: 52px;
@@ -3003,6 +3143,26 @@ color: #7E7E7E;
 }
 
 @media (max-width: 1300px) {
+  .productpage__right {
+    padding-left: 25px;
+  }
+  .productsmore__item {
+    width: 50%;
+  }
+  .info_small {
+    padding: 15px;
+  }
+  .productpage__buttons .btn_main {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  .info__icon {
+    margin-right: 6px;
+  }
+  .btn_fast {
+    padding-right: 27px;
+  }
    .row_contactsmain > .col-md-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -3131,6 +3291,27 @@ ul.locations  li, .text__title, p, .text ol li, .info__text {
 }
 
 @media (max-width: 1023px) {
+  .productpage__accessories {
+    margin: 40px 0;
+    width: 100%;
+  }
+  .productpage__main {
+    flex-wrap: wrap;
+  }
+
+  .productpage__main > * {
+    width: 100%;
+  }
+  .productpage__left {
+    margin-bottom: 30px;
+  }
+  .productpage__right {
+    padding-left: 0;
+  }
+  .productsmore__image img {
+    width: 100%;
+  }
+
   .address__col1 {
     width: 100%;
   }
@@ -3352,6 +3533,100 @@ ul.locations  li, .text__title, p, .text ol li, .info__text {
 }
 
 @media (max-width: 767px) {
+  .productpage__block_flex {
+    flex-wrap: wrap;
+  }
+
+  .productpage__block_flex > * {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .productimg_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .productimg__prev {
+    height: 90px;
+  }
+  .productimg__prev img {
+    max-width: 100%;
+    max-height: 90px;
+  }
+  .productimg__prev {
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+  }
+  .productpage__buttons {
+    display: block;
+  }
+
+  .productpage__buttons > * {
+    margin-bottom: 10px;
+  }
+  .productpage__buttons  .btn_fast_large {
+    background-image: none;
+
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+  }
+  .productpage__params {
+    display: block;
+  }
+  .productpage__params > * {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .accordeon__name {
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  .accordeon__status {
+    font-size: 13px;
+  }
+  .productimg__prev img {
+        position: absolute;
+    left: -99999px;
+    right: -99999px;
+    top: -99999px;
+    bottom: -99999px;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: initial;
+    height: initial;
+    z-index: 1;
+  }
+  .productimg__prev:after {
+    z-index: 2;
+    top: 0;
+  }
+  .productimg__previewscontainer {
+    position: initial;
+    order: 2;
+    width: 100%;
+  }
+  .productimg__current {
+    width: 100%;
+     position: initial;
+    order: 1;
+    margin: 0;
+  }
+  .productpage__accessories {
+    margin: 40px 0;
+    width: 100%;
+  }
+  .productsmore__item {
+    width: 100%;
+    max-width: 320px;
+    margin: 12px auto;
+  }
+
   .btn_main_large {
       width: 340px;
       max-width: 100%;
