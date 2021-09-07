@@ -3233,6 +3233,104 @@ color: #858585;
   margin-bottom: 10px;
 }
 
+
+
+.quantity {
+  background: #fff;
+  display: inline-block;
+  border: 1px solid #E2E2E2;
+box-sizing: border-box;
+border-radius: 3px;
+    width: 152px;
+        display: flex;
+        height: 57px;
+        align-items: center;
+}
+
+input.quantity-field {
+  max-width: 52px;
+  border: none;
+  background: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  height: 40px;
+  
+  /* identical to box height, or 55px */
+  text-align: center;
+  font-size: 16px;
+
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+  width: 50px;
+    display: inline-block;
+/* or 22px */
+
+
+color: #402D3A;
+}
+
+input.quantity-field::-webkit-outer-spin-button,
+input.quantity-field::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+
+.quantity button[type="button"] {
+  background: none;
+  border: none;
+  font-size: 29px;
+  line-height: 1;
+  vertical-align: middle;
+  padding: 0 7px;
+  color: #141414;
+  height: 24px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 22px;
+  padding: 0 4px;
+  position: relative;
+      width: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.quantity-plus:after {
+  content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: block;
+    border-bottom: 4px solid black;
+    transform: rotate( 
+0 );
+}
+
+
+.quantity-minus:after {
+  content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: block;
+    border-bottom: 4px solid black;
+    transform: rotate( 
+180deg );
+}
+
+
+
+
 @media (max-width: 1670px) {
   .btn_check {
     padding: 0 10px;
@@ -3894,6 +3992,10 @@ ul.locations  li, .text__title, p, .text ol li, .info__text {
 }
 .categories__list .row .col-md-6:last-child .catcard_large .catcard__image img {
     right: -306px;
+}
+.quantity {
+  width: 100%;
+  justify-content: space-between;
 }
 }
 

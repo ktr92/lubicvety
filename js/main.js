@@ -87,6 +87,36 @@ $(document).ready(function () {
     $(this).hide();
   });
 
+
+  function incrementValue(e) {
+    e.preventDefault();
+    var fieldName = $(e.target).data('field');
+    var parent = $(e.target).closest('div');
+    var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+    if (!isNaN(currentVal)) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+    } else {
+    parent.find('input[name=' + fieldName + ']').val(1);
+    }
+  }
+  function decrementValue(e) {
+    e.preventDefault();
+    var fieldName = $(e.target).data('field');
+    var parent = $(e.target).closest('div');
+    var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+    if (!isNaN(currentVal) && currentVal > 1) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+    } else {
+    parent.find('input[name=' + fieldName + ']').val(1);
+    }
+  }
+  $('.quantity').on('click', '.quantity-plus', function(e) {
+    incrementValue(e);
+  });
+  $('.quantity').on('click', '.quantity-minus', function(e) {
+    decrementValue(e);
+  });
+
   $(document).mouseup(function(e) 
     {
         var container = $(".bgtoggle-js");
