@@ -38,7 +38,16 @@ $(document).ready(function () {
 
   });
 
+ $(".productselect input[type='radio']").on("change", function(e){
+       $(this).closest('.productselect').find('.productselect__value').text($(this).val());    
+    })
 
+
+
+  $('.productselect__toggle').click(function (e) {
+    $(this).toggleClass('active');
+    $(this).siblings('.productselect__values').toggleClass('active');
+  });
 
   $('.parent_catalog > a').click(function (e) {
     e.preventDefault();
