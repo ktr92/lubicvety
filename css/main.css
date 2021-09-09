@@ -1410,6 +1410,9 @@ span.dcheckbox__text {
  .dcheckbox input[type=checkbox]  {
    display: none;
  }
+ .dcheckbox input[type=radio]  {
+   display: none;
+ }
  
  span.dcheckbox__text:before {
     content: "";
@@ -1452,6 +1455,16 @@ padding-left: 0;
   background-position: center;
 }
 .dcheckbox input[type=checkbox]:checked + .dcheckbox__text {
+
+  opacity: 1;
+}
+.dcheckbox input[type=radio]:checked + .dcheckbox__text:before {
+   background: #B0D0D0;
+   background-image: url(/images/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dcheckbox input[type=radio]:checked + .dcheckbox__text {
 
   opacity: 1;
 }
@@ -2066,7 +2079,7 @@ line-height: 160%;
 
 color: #625A5F;
 }
-.modal input {
+.modal input, input {
 
 
   border: none;
@@ -2083,8 +2096,7 @@ color: #625A5F;
     width: 100%;
     background: none;
 }
-.modal textarea {
-  resize: none;
+.modal textarea, textarea {
   border: none; 
     border-bottom: 2px solid #3D3D3D;
     padding: 10px;
@@ -2099,11 +2111,11 @@ color: #625A5F;
     width: 100%;
     background: none;
 }
-.modal input:focus {
+.modal input:focus, input:focus {
   border-bottom: 2px solid #000;
 }
 
-.modal textarea:focus {
+.modal textarea:focus, textarea:focus {
   border-bottom: 2px solid #000;
 }
 
@@ -3344,7 +3356,6 @@ button.btn_main {
   padding-top: 28px;
   border-bottom: 1px solid #EDEDED;
   display: flex;
-  align-items: center;
 }
 .basket__photo {}
 .basket__img {
@@ -3482,6 +3493,199 @@ background-color: #CADEDC;
   display: block;
 }
 
+.basketpage__cols {
+  display: flex;
+  margin: 0 -15px;
+}
+.basketpage__cols > div {
+  padding: 0 15px;
+}
+.basketpage__left {
+  width: 869px;
+}
+.basket__param {
+  white-space: nowrap;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.basket__info .basket__param:first-child {
+  margin-left: 0;
+}
+
+.basketpage__right {
+  width: calc(100% - 870px);
+}
+
+.basket__subitems {
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.basket__subitem {
+  margin-left: 25px;
+}
+.basket__subitems .basket__subitem:first-child {
+  margin-left: 0;
+}
+.basket__subcontent {
+  background: #F4F9F9;
+border-radius: 3px;
+padding: 3px 18px 3px 5px;
+display: flex;
+align-items: center;
+}
+.basket__subphoto {
+  margin-right: 14px;
+}
+.basket__subimg {
+  width: 42px;
+  padding-top: 100%;
+  position: relative;
+}
+.basket__subimg img {
+    position: absolute;
+    left: -99999px;
+    right: -99999px;
+    top: -99999px;
+    bottom: -99999px;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: initial;
+    height: initial;
+}
+.basket__submain {
+  min-width: 116px;
+  margin-right: 5px;
+}
+.basket__subname {
+font-style: normal;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+
+color: #402D3A;
+}
+.basket__subprice {
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 450;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.basket__subremove {}
+.subremove {
+  width: 12px;
+  height: 12px;
+
+    display: block;
+}
+.basketpage {
+  margin: 45px 0;
+}
+
+
+.basketpage__title {
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+
+/* or 51px */
+margin-bottom: 24px;
+
+color: #000000;
+}
+
+.orderform__wrapper {
+  padding: 45px 56px;
+  background: #F5F9F9;
+  border-radius: 3px;
+}
+.orderform__title {
+  font-style: normal;
+  font-weight: bold;
+font-size: 24px;
+line-height: 160%;
+/* or 38px */
+margin-bottom: 35px;
+
+color: #000000;
+}
+
+.orderform__row > div > div  {
+  margin-bottom: 40px;
+}
+
+.dcheckbox_type2 label {
+  margin-bottom: 0;
+  padding-left: 35px;
+}
+.dcheckbox_type2 span.dcheckbox__text:before {
+  border-radius: 3px;
+}
+.orderform__row .row {
+  align-items: flex-end;
+}
+.orderform__block {
+  margin-bottom: 26px;
+}
+
+.dcheckbox_border label {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  padding: 18px 28px 18px 68px;
+  z-index: 1;
+}
+.dcheckbox_border input[type=radio] + .dcheckbox__text:after {
+  content: "";
+  border: 2px solid #CDDADA;
+box-sizing: border-box;
+border-radius: 3px;
+width: 100%;
+height: 100%;
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+z-index: 0;
+}
+
+.dcheckbox_border input[type=radio]:checked + .dcheckbox__text:after {
+  content: "";
+  border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 3px;
+width: 100%;
+height: 100%;
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+}
+
+
+
+.dcheckbox_border span.dcheckbox__text:before {
+  top: calc(50% - 10px);
+    left: 28px;
+}
+
+.info_medium .info__text {
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 160%;
+/* or 22px */
+
+
+color: #402D3A;
+}
 
 @media (max-width: 1670px) {
   .btn_check {

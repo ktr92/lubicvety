@@ -87,6 +87,8 @@ $(document).ready(function () {
     $(this).hide();
   });
 
+  $("input[type=tel]").mask("+7 (999) 999-99-99");
+
 
   function incrementValue(e) {
     e.preventDefault();
