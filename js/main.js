@@ -40,9 +40,14 @@ $(document).ready(function () {
 
  $(".productselect input[type='radio']").on("change", function(e){
        $(this).closest('.productselect').find('.productselect__value').text($(this).val());    
-    })
+    });
 
-
+  $(".radiotype_list input[type='radio']").on("change", function(e){
+    $(this).closest('.radiotype_list').find('input[type="radio"]').not($(this)).siblings('.picked').removeClass('active');
+     $(this).closest('.radiotype_list').find('input[type="radio"]').not($(this)).siblings('.pick').addClass('active'); 
+      $(this).closest('label').find('.pick').toggleClass('active');
+      $(this).closest('label').find('.picked').toggleClass('active');        
+    });
 
   $('.productselect__toggle').click(function (e) {
     $(this).toggleClass('active');
@@ -85,6 +90,10 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).siblings('.text').removeClass('text_hidden');
     $(this).hide();
+  });
+ $('.ordersuccess__link').click(function (e) {
+    e.preventDefault();
+    $(this).closest('.ordersuccess').removeClass('active');
   });
 
   $("input[type=tel]").mask("+7 (999) 999-99-99");
