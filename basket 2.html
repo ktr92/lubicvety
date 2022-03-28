@@ -4,25 +4,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="/fonts/FuturaPT-Book.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/FuturaPT-Medium.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PlayfairDisplay-Regular.ttf" as="font" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" type="text/css" href="/libs/fontawesome-free-5.15.3-web/css/fontawesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="/libs/fontawesome-free-5.15.3-web/css/brands.css" />
-    <link rel="stylesheet" type="text/css" href="/libs/fontawesome-free-5.15.3-web/css/solid.css" />
-    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
-    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css" />
-    <link rel="stylesheet" href="/libs/lightbox/css/lightbox.min.css" />
-    <link href="/css/jQuery.Brazzers-Carousel.min.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/datepicker.min.css" />    
-    <link rel="stylesheet" type="text/css" href="/css/main.css?v=1.1" />
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
   </head>
   <body>
     <a id="top"></a>
@@ -93,7 +81,7 @@
         <div class="header__main">
           <div class="headermain">
             <div class="headermain__left">
-              <div class="logo"><a href="/"><img src="/images/logo.svg" alt=""></a></div>
+              <div class="logo"><img src="/images/logo.svg" alt="" width="150" height="63"/></div>
               <div class="descript">
                 <div class="descript__1">Доставка свежих цветов по Москве (район Солнцево) </div>
                 <div class="descript__2">Оформление заказов до 20:00</div>
@@ -232,7 +220,6 @@
             </div>
           </div>
           <div class="basketpage">
-            
             <form action="">
               <div class="basketpage__cols">
                 <div class="basketpage__left">
@@ -240,7 +227,7 @@
                   <div class="basket">
                     <div class="basket__item">
                       <div class="basket__photo">
-                        <div class="basket__img"><img src="/images/basket1.jpg" alt=""></div>
+                        <div class="basket__img"><img src="/images/basket1.webp" width="126" height="126" alt=""/></div>
                       </div>
                       <div class="basket__main">
                         <div class="basket__name">БУКЕТ ИЗ ПИОНОВ И АНЕМОНОВ (БУКЕТ #102)</div>
@@ -251,7 +238,7 @@
                             <div class="basket__count">
                               <div class="quantity">
                                 <button type="button" value="–" class="quantity-minus" data-field="quantity"></button>
-                                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                <input type="number" step="1" max="99999" value="1" name="quantity" class="quantity-field">
                                 <button type="button" value="–" class="quantity-plus" data-field="quantity"></button>
                               </div>
                             </div>
@@ -259,7 +246,7 @@
                           <div class="basket__rightbuttons">
                             <a href="" class="remove">
                             <span>удалить из корзины</span>
-                            <img src="/images/basket.svg" alt="">
+                            <img src="/images/basket.svg" width="16" height="16" alt=""/>
                             </a>
                           </div>
                         </div>
@@ -267,7 +254,7 @@
                     </div>
                     <div class="basket__item">
                       <div class="basket__photo">
-                        <div class="basket__img"><img src="/images/basket2.jpg" alt=""></div>
+                        <div class="basket__img"><img src="/images/basket2.webp" width="126" height="126" alt=""/></div>
                       </div>
                       <div class="basket__main">
                         <div class="basket__name">БУКЕТ "РОЗОВЫЙ ФЛАМИНГО" (БУКЕТ #34)</div>
@@ -278,7 +265,7 @@
                             <div class="basket__count">
                               <div class="quantity">
                                 <button type="button" value="–" class="quantity-minus" data-field="quantity"></button>
-                                <input type="number" step="1" max="" value="2" name="quantity" class="quantity-field">
+                                <input type="number" step="1" max="99999" value="2" name="quantity" class="quantity-field">
                                 <button type="button" value="–" class="quantity-plus" data-field="quantity"></button>
                               </div>
                             </div>
@@ -286,7 +273,7 @@
                           <div class="basket__rightbuttons">
                             <a href="" class="remove">
                             <span>удалить из корзины</span>
-                            <img src="/images/basket.svg" alt="">
+                            <img src="/images/basket.svg" width="16" height="16" alt=""/>
                             </a>
                           </div>
                         </div>
@@ -294,7 +281,7 @@
                     </div>
                     <div class="basket__item">
                       <div class="basket__photo">
-                        <div class="basket__img"><img src="/images/productpage2.jpg" alt=""></div>
+                        <div class="basket__img"><img src="/images/productpage2.webp" width="126" height="126" alt=""/></div>
                       </div>
                       <div class="basket__main">
                         <div class="basket__name">ПИОН БЕЛЫЙ</div>
@@ -309,7 +296,7 @@
                             <div class="basket__count">
                               <div class="quantity">
                                 <button type="button" value="–" class="quantity-minus" data-field="quantity"></button>
-                                <input type="number" step="1" max="" value="111" name="quantity" class="quantity-field">
+                                <input type="number" step="1" max="99999" value="111" name="quantity" class="quantity-field">
                                 <button type="button" value="–" class="quantity-plus" data-field="quantity"></button>
                               </div>
                             </div>
@@ -317,7 +304,7 @@
                           <div class="basket__rightbuttons">
                             <a href="" class="remove">
                             <span>удалить из корзины</span>
-                            <img src="/images/basket.svg" alt="">
+                            <img src="/images/basket.svg" width="16" height="16" alt=""/>
                             </a>
                           </div>
                         </div>
@@ -325,7 +312,7 @@
                     </div>
                     <div class="basket__item">
                       <div class="basket__photo">
-                        <div class="basket__img"><img src="/images/basket3.jpg" alt=""></div>
+                        <div class="basket__img"><img src="/images/basket3.webp" width="126" height="126" alt=""/></div>
                       </div>
                       <div class="basket__main">
                         <div class="basket__name">БУКЕТ ИЗ РОЗ ВАНИЛЬНОГО ЦВЕТА С АЛЬСТРОМЕРИЕЙ (БУКЕТ #107)</div>
@@ -336,32 +323,31 @@
                           <div class="basket__subitem">
                             <div class="basket__subcontent">
                               <div class="basket__subphoto">
-                                <div class="basket__subimg"><img src="/images/productsmore1.jpg" alt=""></div>
+                                <div class="basket__subimg"><img src="/images/productsmore1.webp" width="42" height="41" alt=""/></div>
                               </div>
                               <div class="basket__submain">
                                 <div class="basket__subname">Ваза для цветов</div>
                                 <div class="basket__subprice">+ 1 690 руб</div>
                               </div>
                               <div class="basket__subremove">
-                                <a href="" class="subremove"><img src="/images/basket.svg" alt=""></a>
+                                <a href="" class="subremove"><img src="/images/basket.svg" width="12" height="12" alt=""/></a>
                               </div>
                             </div>
                           </div>
                           <div class="basket__subitem">
                             <div class="basket__subcontent">
                               <div class="basket__subphoto">
-                                <div class="basket__subimg"><img src="/images/productsmore2.jpg" alt=""></div>
+                                <div class="basket__subimg"><img src="/images/productsmore2.webp" width="42" height="41" alt=""/></div>
                               </div>
                               <div class="basket__submain">
                                 <div class="basket__subname">Фото к букету</div>
                                 <div class="basket__subprice">+ 690 руб</div>
                               </div>
                               <div class="basket__subremove">
-                                <a href="" class="subremove"><img src="/images/basket.svg" alt=""></a>
+                                <a href="" class="subremove"><img src="/images/basket.svg" width="12" height="12" alt=""/></a>
                               </div>
                             </div>
                           </div>
-                          
                         </div>
                         <div class="basket__buttons">
                           <div class="basket__leftbuttons">
@@ -369,7 +355,7 @@
                             <div class="basket__count">
                               <div class="quantity">
                                 <button type="button" value="–" class="quantity-minus" data-field="quantity"></button>
-                                <input type="number" step="1" max="" value="111" name="quantity" class="quantity-field">
+                                <input type="number" step="1" max="99999" value="111" name="quantity" class="quantity-field">
                                 <button type="button" value="–" class="quantity-plus" data-field="quantity"></button>
                               </div>
                             </div>
@@ -377,15 +363,13 @@
                           <div class="basket__rightbuttons">
                             <a href="" class="remove">
                             <span>удалить из корзины</span>
-                            <img src="/images/basket.svg" alt="">
+                            <img src="/images/basket.svg" width="16" height="16" alt=""/>
                             </a>
                           </div>
                         </div>
                       </div>
                     </div>
-                    
                   </div>
-                  
                 </div>
                 <div class="basketpage__right">
                   <div class="basketpage__title">Оформление заказа</div>
@@ -396,7 +380,7 @@
                           <div class="orderform__title">Контакты заказчика</div>
                           <div class="orderform__row">
                             <div class="row">
-                              <div class="col-md-6"><input type="text" placeholder="Введите ваше имя *"></div>
+                              <div class="col-md-6"><input type="text" placeholder="Введите ваше имя *" /></div>
                               <div class="col-md-6"><input type="tel" placeholder="Ваш телефон * "></div>
                               <div class="col-md-6"><input type="email" placeholder="Ваш E-mail"></div>
                               <div class="col-md-6">
@@ -408,13 +392,12 @@
                                   </label>                                  
                                 </div>
                               </div>
-                              
                             </div>
                           </div>
                           <div class="ordersuccess active">
                             <div class="ordersuccess__content">
                               <div class="ordersuccess__icon">
-                                <img src="/images/ordersuccess.svg" alt="">
+                                <img src="/images/ordersuccess.svg" width="62" height="62" alt=""/>
                               </div>
                               <div class="ordersuccess__link">
                                 <a href="#">изменить информацию</a>
@@ -426,16 +409,15 @@
                           <div class="orderform__title">Контакты  получателя</div>
                           <div class="orderform__row">
                             <div class="row">
-                              <div class="col-md-6"><input type="text" placeholder="Введите ваше имя *"></div>
+                              <div class="col-md-6"><input type="text" placeholder="Введите ваше имя *" /></div>
                               <div class="col-md-6"><input type="tel" placeholder="+7 (___) ___-__-__"></div>
                               <div class="col-md-12"><textarea placeholder="Введите текст открытки (подарочная открытка с пожеланиями в подарок)" rows="2"></textarea></div>
-                              
                             </div>
                           </div>
                           <div class="ordersuccess active">
                             <div class="ordersuccess__content">
                               <div class="ordersuccess__icon">
-                                <img src="/images/ordersuccess.svg" alt="">
+                                <<img src="/images/ordersuccess.svg" width="62" height="62" alt=""/>
                               </div>
                               <div class="ordersuccess__link">
                                 <a href="#">изменить информацию</a>
@@ -443,7 +425,6 @@
                             </div>
                           </div>
                         </div>
-
                         <div class="orderform__block">
                           <div class="orderform__title">Выберите способ получения</div>
                           <div class="orderform__row">
@@ -456,8 +437,8 @@
                                   </span>
                                   </label>                                  
                                 </div>
-                              </div> 
-                               <div class="col-md-6">
+                              </div>
+                              <div class="col-md-6">
                                 <div class="dcheckbox dcheckbox_type2 dcheckbox_border">
                                   <label for="order2-2" class="dcheckbox__label"><span>
                                   <input type="radio" id="order2-2" name="DELIVERY" checked="checked">
@@ -465,86 +446,79 @@
                                   </span>
                                   </label>                                  
                                 </div>
-                              </div> 
-                               
-
+                              </div>
                               <div class="col-md-12">
                                 <div class="orderform__subtitle">Выберите адрес выдачи заказа</div>
                                 <div class="orderform__list">
                                   <div class="radiotype radiotype_list">
                                     <div class="radiotype__item">
-                                       <label for="PICKUP-1" class="radiotype__label">
-                                        <span>
-                                        <input type="radio" checked="checked" id="PICKUP-1" name="PICKUP"/>
-                                        <span class="radiotype__text">Солнцевский проспект д.9</span>
-                                        <span class="pick">Выбрать</span><span class="picked active">Выбран</span>
-                                        </span>
-                                        </label>  
+                                      <label for="PICKUP-1" class="radiotype__label">
+                                      <span>
+                                      <input type="radio" checked="checked" id="PICKUP-1" name="PICKUP"/>
+                                      <span class="radiotype__text">Солнцевский проспект д.9</span>
+                                      <span class="pick">Выбрать</span><span class="picked active">Выбран</span>
+                                      </span>
+                                      </label>  
                                     </div>
                                     <div class="radiotype__item">
-                                       <label for="PICKUP-2" class="radiotype__label">
-                                        <span>
-                                        <input type="radio"  id="PICKUP-2" name="PICKUP"/>
-                                        <span class="radiotype__text">Солнцевский проспект д.2, стр.3</span>
-                                        <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
-                                        </span>
-                                        </label>  
+                                      <label for="PICKUP-2" class="radiotype__label">
+                                      <span>
+                                      <input type="radio"  id="PICKUP-2" name="PICKUP"/>
+                                      <span class="radiotype__text">Солнцевский проспект д.2, стр.3</span>
+                                      <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
+                                      </span>
+                                      </label>  
                                     </div>
                                     <div class="radiotype__item">
-                                       <label for="PICKUP-3" class="radiotype__label">
-                                        <span>
-                                        <input type="radio" id="PICKUP-3" name="PICKUP"/>
-                                        <span class="radiotype__text">Солнцевский проспект д.26</span>
-                                        <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
-                                        </span>
-                                        </label>  
+                                      <label for="PICKUP-3" class="radiotype__label">
+                                      <span>
+                                      <input type="radio" id="PICKUP-3" name="PICKUP"/>
+                                      <span class="radiotype__text">Солнцевский проспект д.26</span>
+                                      <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
+                                      </span>
+                                      </label>  
                                     </div>
                                     <div class="radiotype__item">
-                                       <label for="PICKUP-4" class="radiotype__label">
-                                        <span>
-                                        <input type="radio"  id="PICKUP-4" name="PICKUP"/>
-                                        <span class="radiotype__text">Солнцевский проспект д.2, стр.3</span>
-                                        <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
-                                        </span>
-                                        </label>  
+                                      <label for="PICKUP-4" class="radiotype__label">
+                                      <span>
+                                      <input type="radio"  id="PICKUP-4" name="PICKUP"/>
+                                      <span class="radiotype__text">Солнцевский проспект д.2, стр.3</span>
+                                      <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
+                                      </span>
+                                      </label>  
                                     </div>
                                     <div class="radiotype__item">
-                                       <label for="PICKUP-5" class="radiotype__label">
-                                        <span>
-                                        <input type="radio"  id="PICKUP-5" name="PICKUP"/>
-                                        <span class="radiotype__text">Солнцевский проспект д.2, стр.3</span>
-                                        <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
-                                        </span>
-                                        </label>  
+                                      <label for="PICKUP-5" class="radiotype__label">
+                                      <span>
+                                      <input type="radio"  id="PICKUP-5" name="PICKUP"/>
+                                      <span class="radiotype__text">Солнцевский проспект д.2, стр.3</span>
+                                      <span class="pick active">Выбрать</span><span class="picked">Выбран</span>
+                                      </span>
+                                      </label>  
                                     </div>
-                                    
-                                </div>
+                                  </div>
                                 </div>
                               </div>
-
-
-                             
-
                               <div class="col-md-6">
                                 <div class="selectarrow">
-                                  <input type="text" class="datepicker-here" placeholder="Дата выдачи заказа"></div>
-                                </div>  
+                                  <input type="text" class="datepicker-here" placeholder="Дата выдачи заказа">
+                                </div>
+                              </div>
                               <div class="col-md-6">
                                 <div class="selectarrow">
-                                 <div class="inputselect">
-                                   <select name="" id="" class="timepicker-here">
+                                  <div class="inputselect">
+                                    <select name="" id="" class="timepicker-here">
                                       <option value="">Время выдачи заказа</option>
                                       <option value="8:00 - 9:00">8:00 - 9:00</option>
                                       <option value="8:00 - 9:00">8:00 - 9:00</option>
                                       <option value="8:00 - 9:00">8:00 - 9:00</option>
                                       <option value="8:00 - 9:00">8:00 - 9:00</option>
-                                   </select>
-                                 </div>
+                                    </select>
+                                  </div>
                                 </div>
-                              </div>              
+                              </div>
                             </div>
                           </div>
-                          
                         </div>
                         <div class="orderform__block">
                           <div class="orderform__title">Выберите способ оплаты</div>
@@ -558,8 +532,8 @@
                                   </span>
                                   </label>                                  
                                 </div>
-                              </div> 
-                               <div class="col-md-6">
+                              </div>
+                              <div class="col-md-6">
                                 <div class="dcheckbox dcheckbox_type2 dcheckbox_border">
                                   <label for="order5-2" class="dcheckbox__label"><span>
                                   <input type="radio" id="order5-2" name="PAYMENT">
@@ -567,23 +541,20 @@
                                   </span>
                                   </label>                                  
                                 </div>
-                              </div> 
+                              </div>
                             </div>
                           </div>
                         </div>
-
                         <div class="orderform__block">
                           <div class="orderform__title">Примечание к заказу</div>
                           <div class="orderform__row">
                             <div class="row">
                               <div class="col-md-12">
                                 <textarea name="" id="" cols="" rows="2" placeholder="Напишите примечание к заказу, например особое пожелание к отделу доставки..."></textarea>
-                              </div> 
-                               
+                              </div>
                             </div>
                           </div>
                         </div>
-
                         <div class="orderform__block">
                           <div class="orderform__title">Есть промокод? </div>
                           <div class="orderform__row">
@@ -593,13 +564,11 @@
                                   <input type="text" placeholder="Введите промокод">
                                   <button class="btn_color">ПРИМЕНИТЬ ПРОМОКОД</button>
                                 </div>
-                              </div> 
-                               
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-
                       <div class="orderform__confirm">
                         <div class="orderconfirm">
                           <div class="orderconfirm__content">
@@ -617,20 +586,16 @@
                                   <span class="orderconfirm__price-left"><span><span>Скидка по промокоду:</span></span></span>
                                   <span class="orderconfirm__price-right orderconfirm__price-right_red">- 1 000 руб</span>
                                 </li>
-                                
                               </ul>
                             </div>
-
-                             <div class="orderconfirm__prices orderconfirm__prices_total">
+                            <div class="orderconfirm__prices orderconfirm__prices_total">
                               <ul class="orderconfirm__price">
                                 <li>
                                   <span class="orderconfirm__price-left"><span><span>Итого:</span></span></span>
                                   <span class="orderconfirm__price-right">31 950 руб</span>
                                 </li>
-                                
                               </ul>
                             </div>
-
                             <div class="orderconfirm__confirm"><button type="submit" class="btn_main btn_main_large goorder">оформить заказ</button></div>
                           </div>
                         </div>
@@ -650,9 +615,9 @@
           <div class="footer__cols">
             <div class="footer__col footer__col_1">
               <div class="footer__logo dflex">
-                <div class="logo"><a href="/"><img src="/images/logo2.svg" alt=""></a></div>
+                <div class="logo"><a href="/"><img src="/images/logo2.svg" alt="" width="150" height="63" /></a></div>
                 <div class="descript">
-                  <div class="descript__1">Доставка свежих цветов по <br>Москве (район Солнцево) </div>
+                  <div class="descript__1">Доставка свежих цветов по <br />Москве (район Солнцево) </div>
                 </div>
               </div>
               <div class="footer__contacts">
@@ -745,66 +710,13 @@
         </div>
       </div>
     </footer>
-    <!-- Модальные окно - Оставить отзыв -->
-    <div id="modal_review" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-          <img src="/images/close.svg" alt="">
-          </button>
-          <div class="modal-body">
-            <div class="modal__content">
-              <div class="modal-title">Оставьте отзыв</div>
-              <div class="modal-text">Вам понравился этот букет и вы хотели бы получить его в подарок от вашего близкого человека? Заполните в форме ниже его данные, и он получит письмо с вашим намеком.</div>
-              <div class="modal__form">
-                <form>
-                  <div class="modal__inputs">
-                    <div class="form-group">
-                      <input type="text" name="" placeholder="Введите ваше имя *">
-                    </div>
-                    <div class="form-group">
-                      <input type="tel" name="" placeholder="Введите ваш E-mail*">
-                    </div>
-                    <div class="form-group">
-                      <textarea name="" id="" cols="" rows="2" placeholder="Напишите Ваш отзыв"></textarea>
-                    </div>
-                  </div>
-                  <button class="btn_main btn_main_large" type="submit">Отправить отзыв</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Модальные окно - Оставить отзыв -->
-    <div id="modal_review_ty" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-          <img src="/images/close.svg" alt="">
-          </button>
-          <div class="modal-body">
-            <div class="modal__content">
-              <div class="modal-title">Спасибо за отзыв!</div>
-              <div class="modal-text">Совсем скоро ваш отзыв появится на сайте.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="bglayer"></div>
-    <script src="/js/jquery-1.9.1.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/maskedinput.js"></script>  
-    <script src="/js/slick.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/jQuery.Brazzers-Carousel.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>  
-    <script src="/js/sly.min.js"></script>  
-    <script src="/js/jquery-ui.js"></script>   
-    <script src="/js/datepicker.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>  
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>  
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/modal.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

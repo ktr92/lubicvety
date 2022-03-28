@@ -4,24 +4,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="/fonts/FuturaPT-Book.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/FuturaPT-Medium.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PlayfairDisplay-Regular.ttf" as="font" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" type="text/css" href="/libs/fontawesome-free-5.15.3-web/css/fontawesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="/libs/fontawesome-free-5.15.3-web/css/brands.css" />
-    <link rel="stylesheet" type="text/css" href="/libs/fontawesome-free-5.15.3-web/css/solid.css" />
-    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
-    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css" />
-    <link rel="stylesheet" href="/libs/lightbox/css/lightbox.min.css" />
-    <link href="/css/jQuery.Brazzers-Carousel.min.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="/css/main.css?v=1.1" />
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
   </head>
   <body>
     <a id="top"></a>
@@ -92,7 +81,7 @@
         <div class="header__main">
           <div class="headermain">
             <div class="headermain__left">
-              <div class="logo"><a href="/"><img src="/images/logo.svg" alt=""></a></div>
+              <div class="logo"><img src="/images/logo.svg" alt="" width="150" height="63"/></div>
               <div class="descript">
                 <div class="descript__1">Доставка свежих цветов по Москве (район Солнцево) </div>
                 <div class="descript__2">Оформление заказов до 20:00</div>
@@ -217,12 +206,8 @@
       </div>
     </header>
     <main>
-
-
-      
       <div class="page">
         <div class="container">
-
           <div class="breadcrumbs">
             <ul>
               <li><a href=""><span>Главная</span></a></li>
@@ -230,8 +215,6 @@
               <li><span>Все цветы</span></li>
             </ul>
           </div>
-
-
           <div class="blocktitle blocktitle_flex">
             <div class="blocktitle__left">
               <h1>Каталог всех цветов</h1>
@@ -246,39 +229,34 @@
                       <option value="">Сначала дороже</option>
                       <option value="">Сначала новинки</option>
                       <option value="">Сначала хиты</option>
-                      
                     </select>
                   </div>
                 </form>
               </div>
             </div>
-             <div class="filterbutton">
-              <img src="/images/filter.svg" alt="">
+            <div class="filterbutton">
+              <img src="/images/filter.svg" alt=""/>
               <span></span>
             </div>
           </div>
         </div>
-        
         <div class="catalog">
           <div class="container">
             <div class="catalog__wrapper">
               <div class="catalog__aside">
                 <aside>
-
                   <div class="filter">
                     <form action="">
-                    <div class="filter__items">
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header">
-                          <span>Цена, руб</span>
-                        </div>
-                        <div class="filter__form">
-
+                      <div class="filter__items">
+                        <div class="filter__item filter__item_open">
+                          <div class="filter__header">
+                            <span>Цена, руб</span>
+                          </div>
+                          <div class="filter__form">
                             <!-- тут начальная и конечная цена исходя из цен в каталоге -->
                             <input type="hidden" value="0" id="limitMin1" wfd-invisible="true"/>
                             <input type="hidden" value="25000" id="limitMax1" wfd-invisible="true"/>
-
-                          <div class="formCost">
+                            <div class="formCost">
                               <div class="formCost__inputs">
                                 <div class="formCost__price_left">
                                   <label for="minCost1"></label> 
@@ -290,36 +268,33 @@
                                 </div>
                               </div>
                             </div>
-
-                          <div class="filter__price">
-                            <div class="sliderCont">
-                              <div id="sliderprice1" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
-                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
+                            <div class="filter__price">
+                              <div class="sliderCont">
+                                <div id="sliderprice1" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                  <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
+                                  <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
+                                </div>
                               </div>
                             </div>
-                            
                           </div>
                         </div>
-                        
-                      </div>
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header">
-                          <span>Вид композиции</span>
-                        </div>
-                        <div class="filter__form">
-                          <div class="filter__radiobuttons">
-                            <div class="radiobuttons">
-                              <div class="radiotype">
-                                <div class="radiotype__item">
-                                   <label for="radio2-1" class="radiotype__label">
+                        <div class="filter__item filter__item_open">
+                          <div class="filter__header">
+                            <span>Вид композиции</span>
+                          </div>
+                          <div class="filter__form">
+                            <div class="filter__radiobuttons">
+                              <div class="radiobuttons">
+                                <div class="radiotype">
+                                  <div class="radiotype__item">
+                                    <label for="radio2-1" class="radiotype__label">
                                     <span>
-                                    <input type="radio" checked="" id="radio2-1" name="radioparam2">
+                                    <input type="radio" checked="checked" id="radio2-1" name="radioparam2">
                                     <span class="radiotype__text">Букет</span>
                                     </span>
                                     </label>  
-                                </div>
-                                 <div class="radiotype__item">
+                                  </div>
+                                  <div class="radiotype__item">
                                     <label for="radio2-2" class="radiotype__label">
                                     <span>
                                     <input type="radio" id="radio2-2" name="radioparam2">
@@ -327,7 +302,7 @@
                                     </span>
                                     </label> 
                                   </div>
-                                 <div class="radiotype__item"> 
+                                  <div class="radiotype__item"> 
                                     <label for="radio2-3" class="radiotype__label">
                                     <span>
                                     <input type="radio" id="radio2-3" name="radioparam2">
@@ -335,237 +310,229 @@
                                     </span>
                                     </label>  
                                   </div>
-                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__item filter__item_open">
+                          <div class="filter__header filter__header-js">
+                            <span>Цветовая гамма</span>
+                            <svg width="9" height="4" viewBox="0 0 9 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.5 0L8.39711 3.75L0.602886 3.75L4.5 0Z" fill="#402D3A"/>
+                            </svg>
+                          </div>
+                          <div class="filter__form">
+                            <div class="filter__checkbox">
+                              <div class="dcheckbox">
+                                <label for="filter1-1" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter1-1">
+                                <span class="dcheckbox__text">Розовый</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter1-2" class="dcheckbox__label"><span>
+                                <input type="checkbox" checked="checked" id="filter1-2">
+                                <span class="dcheckbox__text">Красный</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter1-3" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter1-3">
+                                <span class="dcheckbox__text">Красный</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter1-4" class="dcheckbox__label"><span>
+                                <input type="checkbox" checked="checked" id="filter1-4">
+                                <span class="dcheckbox__text">Красный</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter1-5" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter1-5">
+                                <span class="dcheckbox__text">Красный</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter1-6" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter1-6">
+                                <span class="dcheckbox__text">Красный (гвоздики)</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter1-7" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter1-7">
+                                <span class="dcheckbox__text">Красный</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter1-8" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter1-8">
+                                <span class="dcheckbox__text">Красный</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__item filter__item_open">
+                          <div class="filter__header filter__header-js">
+                            <span>По составу букета </span>
+                            <svg width="9" height="4" viewBox="0 0 9 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.5 0L8.39711 3.75L0.602886 3.75L4.5 0Z" fill="#402D3A"/>
+                            </svg>
+                          </div>
+                          <div class="filter__form">
+                            <div class="filter__checkbox">
+                              <div class="dcheckbox">
+                                <label for="filter2-1" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-1">
+                                <span class="dcheckbox__text">Розы</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-2" class="dcheckbox__label"><span>
+                                <input type="checkbox" checked="checked" id="filter2-2">
+                                <span class="dcheckbox__text">Альстромерия</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-3" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-3">
+                                <span class="dcheckbox__text">Анемоны</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-4" class="dcheckbox__label"><span>
+                                <input type="checkbox" checked="checked" id="filter2-4">
+                                <span class="dcheckbox__text">Герберы</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-5" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-5">
+                                <span class="dcheckbox__text">Гортензии</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-6" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-6">
+                                <span class="dcheckbox__text">Диантусы (гвоздики)</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-7" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-7">
+                                <span class="dcheckbox__text">Ириссы</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-8" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-8">
+                                <span class="dcheckbox__text">Каллы</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-9" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-9">
+                                <span class="dcheckbox__text">Альстромерия</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-10" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-10">
+                                <span class="dcheckbox__text">Розы</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-11" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-11">
+                                <span class="dcheckbox__text">Розы</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter2-21" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter2-21">
+                                <span class="dcheckbox__text">Розы</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__item filter__item_close">
+                          <div class="filter__header filter__header-js">
+                            <span>Вид скрытого</span>
+                            <svg width="9" height="4" viewBox="0 0 9 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.5 0L8.39711 3.75L0.602886 3.75L4.5 0Z" fill="#402D3A"/>
+                            </svg>
+                          </div>
+                          <div class="filter__form">
+                            <div class="filter__checkbox">
+                              <div class="dcheckbox">
+                                <label for="filter31" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter31">
+                                <span class="dcheckbox__text">1</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter32" class="dcheckbox__label"><span>
+                                <input type="checkbox" checked="checked" id="filter32">
+                                <span class="dcheckbox__text">2</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter33" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter33">
+                                <span class="dcheckbox__text">3</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter34" class="dcheckbox__label"><span>
+                                <input type="checkbox" checked="checked" id="filter34">
+                                <span class="dcheckbox__text">4</span>
+                                </span>
+                                </label>                                  
+                              </div>
+                              <div class="dcheckbox">
+                                <label for="filter35" class="dcheckbox__label"><span>
+                                <input type="checkbox" id="filter35">
+                                <span class="dcheckbox__text">5</span>
+                                </span>
+                                </label>                                  
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header filter__header-js">
-                          <span>Цветовая гамма</span>
-                          <svg width="9" height="4" viewBox="0 0 9 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 0L8.39711 3.75L0.602886 3.75L4.5 0Z" fill="#402D3A"/>
-                          </svg>
-                        </div>
-                        <div class="filter__form">
-                          <div class="filter__checkbox">
-                            <div class="dcheckbox">
-                              <label for="filter1-1" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-1">
-                              <span class="dcheckbox__text">Розовый</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-2" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="" id="filter1-2">
-                              <span class="dcheckbox__text">Красный</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-3" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-3">
-                              <span class="dcheckbox__text">Красный</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-4" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="" id="filter1-4">
-                              <span class="dcheckbox__text">Красный</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-5" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-5">
-                              <span class="dcheckbox__text">Красный</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-6" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-6">
-                              <span class="dcheckbox__text">Красный (гвоздики)</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-7" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-7">
-                              <span class="dcheckbox__text">Красный</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-8" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-8">
-                              <span class="dcheckbox__text">Красный</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                           
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header filter__header-js">
-                          <span>По составу букета </span>
-                          <svg width="9" height="4" viewBox="0 0 9 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 0L8.39711 3.75L0.602886 3.75L4.5 0Z" fill="#402D3A"/>
-                          </svg>
-
-                        </div>
-                        <div class="filter__form">
-                          <div class="filter__checkbox">
-                            <div class="dcheckbox">
-                              <label for="filter2-1" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-1">
-                              <span class="dcheckbox__text">Розы</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-2" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="" id="filter2-2">
-                              <span class="dcheckbox__text">Альстромерия</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-3" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-3">
-                              <span class="dcheckbox__text">Анемоны</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-4" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="" id="filter2-4">
-                              <span class="dcheckbox__text">Герберы</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-5" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-5">
-                              <span class="dcheckbox__text">Гортензии</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-6" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-6">
-                              <span class="dcheckbox__text">Диантусы (гвоздики)</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-7" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-7">
-                              <span class="dcheckbox__text">Ириссы</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-8" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-8">
-                              <span class="dcheckbox__text">Каллы</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-9" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-9">
-                              <span class="dcheckbox__text">Альстромерия</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-10" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-10">
-                              <span class="dcheckbox__text">Розы</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                             <div class="dcheckbox">
-                              <label for="filter2-11" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-11">
-                              <span class="dcheckbox__text">Розы</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                             <div class="dcheckbox">
-                              <label for="filter2-21" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-21">
-                              <span class="dcheckbox__text">Розы</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__item filter__item_close">
-                        <div class="filter__header filter__header-js">
-                          <span>Вид скрытого</span>
-                          <svg width="9" height="4" viewBox="0 0 9 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 0L8.39711 3.75L0.602886 3.75L4.5 0Z" fill="#402D3A"/>
-                          </svg>
-                        </div>
-                        <div class="filter__form">
-                          <div class="filter__checkbox">
-                            <div class="dcheckbox">
-                              <label for="filter31" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter31">
-                              <span class="dcheckbox__text">1</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter32" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="" id="filter32">
-                              <span class="dcheckbox__text">2</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter33" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter33">
-                              <span class="dcheckbox__text">3</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter34" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="" id="filter34">
-                              <span class="dcheckbox__text">4</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter35" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter35">
-                              <span class="dcheckbox__text">5</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="filter__buttons"><a href="" class="btn_main btn_main_reset">Сбросить фильтр</a></div>
-                  </form>
+                      <div class="filter__buttons"><a href="" class="btn_main btn_main_reset">Сбросить фильтр</a></div>
+                    </form>
                   </div>
-
-                   <div class="aside__menu">
+                  <div class="aside__menu">
                     <div class="leftmenu">
-                      <div class="leftmenu__header"><img src="/images/burger.svg" alt=""><span>Каталог товаров</span></div>
+                      <div class="leftmenu__header"><img src="/images/burger.svg" alt="" width="17" height="14" /><span>Каталог товаров</span></div>
                       <div class="leftmenu__list">
                         <ul>
                           <li><a href="">Цветы</a></li>
@@ -577,310 +544,357 @@
                       </div>
                     </div>
                   </div>
-
-
                 </aside>
               </div>
               <div class="catalog__main">
-                 <div class="productlist">
-                    <div class="productlist__items">
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
+                <div class="productlist">
+                  <div class="productlist__items">
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
                             <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
                             </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
                             </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productlist__item">
-                        <div class="productcard productcard_type2">
-                          <div class="productcard__content">
-                            <div class="productcard__image">
-                              <img src="/images/product2.jpg" alt="">
-                              <img src="/images/product3.jpg" alt="">
-                              <img src="/images/product1.jpg" alt="">
-                            </div>
-                            <div class="productcard__main">
-                              <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
-                              <div class="productcard__price">
-                                <div class="productcard__newprice">5 690 руб</div>
-                              </div>
-                            </div>
-                            <div class="productcard__hidden">
-                              <div class="productcard__buttons">
-                                <a href="" class="btn_main btn_main_small">В корзину</a>
-                                <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
                     </div>
-
-                    <div class="showmore"><a href="" class="showmore__link"><span>показать еще</span></a></div>
-
-                  </div>             
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productlist__item">
+                      <div class="productcard">
+                        <div class="productcard__content">
+                          <div class="productcart__images">
+                            <div class="productcard__thumbs">
+                              <i class="is-active"></i>
+                              <i></i>
+                              <i></i>
+                            </div>
+                            <div class="productcard__image">
+                              <img data-src="/images/product1.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product2.webp" width="433" height="420" alt=""/>
+                              <img data-src="/images/product3.webp" width="433" height="420" alt=""/>
+                            </div>
+                          </div>
+                          <div class="productcard__main">
+                            <div class="productcard__name"><a href="">БУКЕТ С ХРИЗАНТЕМОЙ KSENIA (БУКЕТ #103)</a></div>
+                            <div class="productcard__price">
+                              <div class="productcard__newprice">5 690 руб</div>
+                            </div>
+                          </div>
+                          <div class="productcard__hidden">
+                            <div class="productcard__buttons">
+                              <a href="" class="btn_main btn_main_small">В корзину</a>
+                              <a href="" class="btn_border btn_border_small btn_fast">Быстрый заказ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="showmore"><a href="" class="showmore__link"><span>показать еще</span></a></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="pageblock">
         <div class="container">
           <div class="blocktitle blocktitle_type2">
             <div class="blocktitle__left">
               <h2>Покупайте букеты в Москве</h2>
             </div>
-            
           </div>
-
           <div class="row text-js">
             <div class="col-md-6">
               <h3>Цветы в Солнцево</h3>
@@ -891,7 +905,6 @@
                 <p>Самые популярные, невероятно красивые и ароматные цветы - это розы. Оформите индивидуальный заказ - у нас Вы можете приобрести букет из роз на любой вкус! </p>
                 <p>Букет из роз - это беспроигрышный вариант для любого случая и получателя.</p>
                 <p>Цветы – прекрасный способ порадовать дорого человека. Сегодня заказ цветов в интернете – очень удобная услуга. Вы сможете сделать приятный подарок даже если находитесь в другом городе. Всего один телефонный звонок или несколько кликов мышкой на сайте, и в день заказа вашей любимой, маме, сестре, подруге, хорошему другу или коллеге курьер везет на дом или в офис роскошный или</p>
-               
               </div>
               <a href="#" class="showtext"><span>развернуть</span></a>
             </div>
@@ -899,37 +912,33 @@
               <h3>Доставка букетов цветов: преимущества услуги</h3>
               <div class="text text_hidden">
                 <p>Цветы – прекрасный способ порадовать дорого человека. Сегодня заказ цветов в интернете – очень удобная услуга. Вы сможете сделать приятный подарок даже если находитесь в другом городе. Всего один телефонный звонок или несколько кликов мышкой на сайте, и в день заказа вашей любимой, маме, сестре, подруге, хорошему другу или коллеге курьер везет на дом или в офис роскошный или наоборот нежный изысканный букет цветов. И это всего лишь одна причина, почему быстрая доставка цветов (Москва) пользуется большим спросом. Ну а если вы хотите приятно удивить близкого человека уникальной композицией или эксклюзивным букетом – интернет-магазин Flower Language к вашим услугам!</p>
-               <p>Цветы – прекрасный способ порадовать дорого человека. Сегодня заказ цветов в интернете – очень удобная услуга. Вы сможете сделать приятный подарок даже если находитесь в другом городе. Всего один телефонный звонок или несколько кликов мышкой на сайте, и в день заказа вашей любимой, маме, сестре, подруге, хорошему другу или коллеге курьер везет на дом или в офис роскошный или наоборот нежный изысканный букет цветов. И это всего лишь одна причина, почему быстрая доставка цветов (Москва) пользуется большим спросом. Ну а если вы хотите приятно удивить близкого человека уникальной композицией или эксклюзивным букетом – интернет-магазин Flower Language к вашим услугам!</p>
-               
+                <p>Цветы – прекрасный способ порадовать дорого человека. Сегодня заказ цветов в интернете – очень удобная услуга. Вы сможете сделать приятный подарок даже если находитесь в другом городе. Всего один телефонный звонок или несколько кликов мышкой на сайте, и в день заказа вашей любимой, маме, сестре, подруге, хорошему другу или коллеге курьер везет на дом или в офис роскошный или наоборот нежный изысканный букет цветов. И это всего лишь одна причина, почему быстрая доставка цветов (Москва) пользуется большим спросом. Ну а если вы хотите приятно удивить близкого человека уникальной композицией или эксклюзивным букетом – интернет-магазин Flower Language к вашим услугам!</p>
               </div>
               <a href="#" class="showtext"><span>развернуть</span></a>
             </div>
-            
-            
           </div>
         </div>
       </div>
     </main>
     <footer class="footer" id="footer">
-        <div class="container">
-          <div class="footer__wrapper">
-            <div class="footer__cols">
-              <div class="footer__col footer__col_1">
-                <div class="footer__logo dflex">
-                  <div class="logo"><a href="/"><img src="/images/logo2.svg" alt=""></a></div>
-                  <div class="descript">
-                    <div class="descript__1">Доставка свежих цветов по <br>Москве (район Солнцево) </div>
-                  </div>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__cols">
+            <div class="footer__col footer__col_1">
+              <div class="footer__logo dflex">
+                <div class="logo"><a href="/"><img src="/images/logo2.svg" alt="" width="150" height="63" /></a></div>
+                <div class="descript">
+                  <div class="descript__1">Доставка свежих цветов по <br />Москве (район Солнцево) </div>
                 </div>
-                <div class="footer__contacts">
-                  <div class="navpanel__info1">Оформление заказов <b>до 20:00</b>.  <span>Звоните пишите:</span></div>
-                  <div class="dflex">
-                    <div class="phone"><a href="tel:79104445522">+7 (910) 444-55-22</a></div>
-                    <div class="email"><a href="mailto:info@lubicvety.ru">info@lubicvety.ru</a></div>  
-                  </div>
-                  
-                </div> 
-                <div class="socials">
+              </div>
+              <div class="footer__contacts">
+                <div class="navpanel__info1">Оформление заказов <b>до 20:00</b>.  <span>Звоните пишите:</span></div>
+                <div class="dflex">
+                  <div class="phone"><a href="tel:79104445522">+7 (910) 444-55-22</a></div>
+                  <div class="email"><a href="mailto:info@lubicvety.ru">info@lubicvety.ru</a></div>
+                </div>
+              </div>
+              <div class="socials">
                 <a href="viber://chat?number=79104445522" target="_blank" class="socials__item">
                   <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.5734 2.82404C19.578 0.86777 16.352 -0.0801162 11.9833 0.00529699C7.57831 0.0919336 4.63378 0.865101 2.71676 2.43857C0.863252 3.95977 0 6.18574 0 9.44379V12.7689C0 16.6152 2.06104 20.8437 6.00017 21.4835C6.45493 21.5579 6.88333 21.2487 6.95717 20.7938C7.03102 20.3392 6.72229 19.9107 6.26753 19.8368C3.28018 19.3516 1.66823 15.8331 1.66823 12.7689V9.44379C1.66823 4.77209 3.39929 1.84257 12.016 1.67308C15.9224 1.59567 18.742 2.3843 20.4053 4.01516C21.7015 5.28624 22.3317 7.0619 22.3317 9.44379V12.7689C22.3317 17.8041 20.0717 20.0249 14.2751 20.6789H10.1648C9.94363 20.6789 9.73143 20.7667 9.57507 20.9232L6.67891 23.8193C6.35316 24.1451 6.35316 24.6733 6.67891 24.999C6.84173 25.1618 7.05526 25.2433 7.26869 25.2433C7.48211 25.2433 7.69564 25.1619 7.85846 24.999L10.5104 22.3471H14.3217C14.3524 22.3471 14.3832 22.3454 14.4138 22.342C17.7311 21.9735 20.0028 21.1101 21.5626 19.6248C23.2027 18.0629 24 15.8203 24 12.7688V9.44379C24 6.63016 23.1836 4.40297 21.5734 2.82404Z" fill="#2B2B2B"></path>
@@ -957,133 +966,69 @@
                   </svg>
                 </a>
               </div>
-
-              <div class="navpanel__button"><a href="" class="btn_border">Заказать звонок</a></div> 
-                
-              </div>
-              <div class="footer__col footer__col_2"></div>
-              <div class="footer__col footer__col_3">
-                <div class="footermenu">
-                  <div class="footermenu__title">КАТАЛОГ</div>
-                  <div class="footermenu__menu">
-                    <ul>
-                      <li><a href="">Букеты</a></li>
-                      <li><a href="">Композиции</a></li>
-                      <li><a href="">Букеты из роз</a></li>
-                      <li><a href="">Монобукеты</a></li>
-                    </ul>
-                  </div>
+              <div class="navpanel__button"><a href="" class="btn_border">Заказать звонок</a></div>
+            </div>
+            <div class="footer__col footer__col_2"></div>
+            <div class="footer__col footer__col_3">
+              <div class="footermenu">
+                <div class="footermenu__title">КАТАЛОГ</div>
+                <div class="footermenu__menu">
+                  <ul>
+                    <li><a href="">Букеты</a></li>
+                    <li><a href="">Композиции</a></li>
+                    <li><a href="">Букеты из роз</a></li>
+                    <li><a href="">Монобукеты</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="footer__col footer__col_4">
-                <div class="footermenu">
-                  <div class="footermenu__title">ИНФОРМАЦИЯ</div>
-                  <div class="footermenu__menu">
-                    <ul>
-                      <li><a href="">Букеты</a></li>
-                      <li><a href="">Композиции</a></li>
-                      <li><a href="">Букеты из роз</a></li>
-                      <li><a href="">Монобукеты</a></li>
-                    </ul>
-                  </div>
+            </div>
+            <div class="footer__col footer__col_4">
+              <div class="footermenu">
+                <div class="footermenu__title">ИНФОРМАЦИЯ</div>
+                <div class="footermenu__menu">
+                  <ul>
+                    <li><a href="">Букеты</a></li>
+                    <li><a href="">Композиции</a></li>
+                    <li><a href="">Букеты из роз</a></li>
+                    <li><a href="">Монобукеты</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="footer__col footer__col_5">
-                <div class="footermenu">
-                  <div class="footermenu__title">ПОЛЕЗНЫЕ ССЫЛКИ</div>
-                  <div class="footermenu__menu">
-                    <ul>
-                      <li><a href="">Букеты</a></li>
-                      <li><a href="">Композиции</a></li>
-                      <li><a href="">Букеты из роз</a></li>
-                      <li><a href="">Монобукеты</a></li>
-                    </ul>
-                  </div>
+            </div>
+            <div class="footer__col footer__col_5">
+              <div class="footermenu">
+                <div class="footermenu__title">ПОЛЕЗНЫЕ ССЫЛКИ</div>
+                <div class="footermenu__menu">
+                  <ul>
+                    <li><a href="">Букеты</a></li>
+                    <li><a href="">Композиции</a></li>
+                    <li><a href="">Букеты из роз</a></li>
+                    <li><a href="">Монобукеты</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer__wrapper footer__wrapper2">
-            <div class="footerinfo dflex">
-              <div class="footerinfo__item1">© «Люби Цветы» 2021</div>
-              <div class="footerinfo__item2">  ИП Никонова Ю. К.     |     ИНН: 772775853640     |     ОГРНИП: 318774600035375</div>
-              <div class="footerinfo__item3">
-                <a href="//velvetmedia.ru" target="_blank" class="velvet">Разработка и продвижение <span>VELVET</span></a>
-              </div>
-            </div>
-          </div>
-
         </div>
+        <div class="footer__wrapper footer__wrapper2">
+          <div class="footerinfo dflex">
+            <div class="footerinfo__item1">© «Люби Цветы» 2021</div>
+            <div class="footerinfo__item2">  ИП Никонова Ю. К.     |     ИНН: 772775853640     |     ОГРНИП: 318774600035375</div>
+            <div class="footerinfo__item3">
+              <a href="//velvetmedia.ru" target="_blank" class="velvet">Разработка и продвижение <span>VELVET</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!-- Модальные окно - Заказать звонок -->
-    <div id="modalcallback" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true">
-            <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg">
-              <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path>
-            </svg>
-          </button>
-          <div class="modal-body">
-            <div class="modal__content">
-              <div class="modal-title">Заказать звонок</div>
-              <div class="modal__form">
-                <form>
-                  <div class="modal__inputs">
-                    <div class="form-group">
-                      <input type="text" name="" placeholder="Ваше имя">
-                    </div>
-                    <div class="form-group">
-                      <input type="tel" name="" placeholder="Телефон">
-                    </div>
-                  </div>
-                  <div class="check">
-                    <input type="checkbox" id="checkbox_3"  /> <label for="checkbox_3">Я даю свое согласие на обработку моих <a href="#">персональных данных</a></label>
-                  </div>
-                  <button class="btn_main btn_large" type="submit">Отправить</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Модальные окно - Добавление в корзину  -->
-    <div id="modaladd" class="modal-product modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true">
-            <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg">
-              <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path>
-            </svg>
-          </button>
-          <div class="modal-body">
-            <div class="modal__content">
-              <div class="modalproduct">
-                <div class="modalproduct__img"><img src="/images/product2.png" alt=""></div>
-                <div class="modalproduct__name">Радиатор PRADO Universal 30х300х2600 DU</div>
-                <div class="modalproduct__title">Товар добавлен в корзину</div>
-                <div class="modalproduct__links">
-                  <a href="#" class="btn_border btn_border_orange">Продолжить покупки</a>
-                  <a href="#" class="btn_main btn_main_small">Перейти в корзину</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="bglayer"></div>
-    <script src="/js/jquery-1.9.1.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/maskedinput.js"></script>  
-    <script src="/js/slick.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/jQuery.Brazzers-Carousel.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>  
-    <script src="/js/sly.min.js"></script>  
-    <script src="/js/jquery-ui.js"></script>   
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>  
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>  
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/modal.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
